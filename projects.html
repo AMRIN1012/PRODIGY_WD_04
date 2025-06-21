@@ -1,0 +1,90 @@
+<!-- Updated projects.html with fully centered layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Amrin B</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #f0f4ff, #ffffff);
+    }
+    .projects-grid.center {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .project-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-top: 5px solid #0066cc;
+      width: 300px;
+      text-align: left;
+    }
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #003366;
+    }
+    .project-tools {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<header class="navbar">
+  <div class="container">
+    <h1 class="logo">Amrin B</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+        <li><a href="assets/resume.pdf" download class="resume-btn">Resume</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="projects-section">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects-grid center">
+    <div class="project-card">
+      <h3>AI-Powered Resume Builder</h3>
+      <p class="project-tools">React.js, Spring Boot</p>
+      <p>Developed a smart tool to help HR teams screen and rank resumes efficiently using AI logic.</p>
+    </div>
+    <div class="project-card">
+      <h3>Hackathon Projects (SIH & VIT)</h3>
+      <p class="project-tools">UI/UX, Frontend Development</p>
+      <p>Participated in national-level hackathons where I collaborated on innovative real-world solutions.</p>
+    </div>
+    <div class="project-card">
+      <h3>College Project Expo</h3>
+      <p class="project-tools">HTML, CSS, JS</p>
+      <p>Presented a frontend-focused project at the college-level expo, appreciated for clean UI design.</p>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
